@@ -67,12 +67,12 @@
             <img src="images/logo.png" alt="">
             <a class="btn btn-ghost normal-case text-3xl">Fruit Burst</a>
             <div class="navbar-end invisible lg:visible">
-                
+
                 <input type="text" placeholder="Search here"
                     class=" input rounded-full border-none input-bordered input-secondary w-full max-w-xs" />
-                    <i class="fa-solid pr-3 text-black absolute fa-magnifying-glass"></i>
+                <i class="fa-solid pr-3 text-black absolute fa-magnifying-glass"></i>
             </div>
-            
+
         </div>
         <!-- hero section start -->
         <div class="carousel w-full mt-10 rounded-xl">
@@ -137,8 +137,8 @@
         <section>
             <div
                 class="flex  justify-around bg-white w-[800px] rounded-lg shadow-xl ml-32  relative -top-36 invisible lg:visible">
-                <div>
-                    <img src="./images/fruit1.png" alt="">
+                <div> 
+                 <img src="./images/fruit1.png" alt="">
                     <p class="text-center">Strawberry</p>
                 </div>
                 <div>
@@ -163,7 +163,7 @@
         <!-- deal of the day section -->
         <section class="max-w-screen-xl mx-auto px-6 md:px-12 lg:20 py-5 my-2">
             <div class="flex flex-col lg:flex-row  justify-between">
-                <div class="max-w-screen-xl  mx-auto px-6 md:px-12 lg:20 py-5 my-2">
+                <div>
                     <h2 class="text-4xl font-bold">Deal of the day</h2>
                     <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
                         Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -210,7 +210,31 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <p class="text-[#F85559]">Details</p>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btntext text-orange-400" onclick="my_modal_1.showModal()">Details</button>
+                        <dialog id="my_modal_1" class="modal">
+                            <form method="dialog" class="modal-box">
+                                <!-- card-1 -->
+                <div class="card  bg-base-100 ">
+                    <figure><img class="" src="./images/fruit6.png" alt="Shoes" /></figure>
+                    <div class="card-body m-2 items-center text-center">
+                        <h2 class="text-2xl font-bold">Apples</h2>
+                        <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <div class="rating ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                                <div class="flex justify-center gap-4 mt-4 ">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="border-2 border-orange-500 rounded-lg text-orange-600 p-3">Close</button>
+                                    <div>
+                                        <button class="text-white border-none rounded-xl p-3  bg-[#F85559]">Buy Now</button></div>
+                                </div>
+                            </form>
+                        </dialog>
                     </div>
                 </div>
                 <!-- card-2 -->
@@ -226,7 +250,31 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <p class="text-[#F85559]">Details</p>
+                           <!-- Open the modal using ID.showModal() method -->
+                           <button class="btntext text-orange-400" onclick="my_modal_2.showModal()">Details</button>
+                           <dialog id="my_modal_2" class="modal">
+                               <form method="dialog" class="moda2-box">
+                                   <!-- card-1 -->
+                   <div class="card  bg-base-100  ">
+                       <figure><img class="" src="./images/fruit7.png" alt="Shoes" /></figure>
+                       <div class="card-body m-2 items-center text-center">
+                           <h2 class="text-2xl font-bold">Orange</h2>
+                           <p>Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                           <div class="rating ">
+                               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                           </div>
+                                   <div class="flex justify-center gap-4 mt-4 ">
+                                       <!-- if there is a button in form, it will close the modal -->
+                                       <button class="border-2 border-orange-500 rounded-lg text-orange-600 p-3">Close</button>
+                                       <div>
+                                           <button class="text-white border-none rounded-xl p-3  bg-[#F85559]">Buy Now</button></div>
+                                   </div>
+                               </form>
+                           </dialog>
                     </div>
                 </div>
                 <!-- card-3 -->
@@ -242,7 +290,31 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <p class="text-[#F85559]">Details</p>
+                           <!-- Open the modal using ID.showModal() method -->
+                           <button class="btntext text-orange-400" onclick="my_modal_3.showModal()">Details</button>
+                           <dialog id="my_modal_3" class="modal">
+                               <form method="dialog" class="moda1-box">
+                                   <!-- card-3 -->
+                   <div class="card  bg-base-100 ">
+                       <figure><img  src="./images/fruit8.png" alt="Shoes" /></figure>
+                       <div class="card-body m-2 items-center text-center">
+                           <h2 class="text-2xl font-bold">Apples</h2>
+                           <p>Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                           <div class="rating ">
+                               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                           </div>
+                                   <div class="flex justify-center gap-4 mt-4 ">
+                                       <!-- if there is a button in form, it will close the modal -->
+                                       <button class="border-2 border-orange-500 rounded-lg text-orange-600 p-3">Close</button>
+                                       <div>
+                                           <button class="text-white border-none rounded-xl p-3  bg-[#F85559]">Buy Now</button></div>
+                                   </div>
+                               </form>
+                           </dialog>
                     </div>
                 </div>
                 <!-- card-4 -->
@@ -250,7 +322,7 @@
                     <figure><img class="w-20" src="./images/fruit9.png" alt="Shoes" /></figure>
                     <div class="card-body m-2 items-center">
                         <h2>12.90$ - 18.85$</h2>
-                        <p>Apples</p>
+                        <p>Banana</p>
                         <div class="rating ">
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -258,7 +330,31 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <p class="text-[#F85559]">Details</p>
+                           <!-- Open the modal using ID.showModal() method -->
+                           <button class="btntext text-orange-400" onclick="my_modal_4.showModal()">Details</button>
+                           <dialog id="my_modal_4" class="modal">
+                               <form method="dialog" class="modal-box">
+                                   <!-- card-4 -->
+                   <div class="card  bg-base-100 ">
+                       <figure><img src="./images/fruit9.png" alt="Shoes" /></figure>
+                       <div class="card-body m-2 items-center text-center">
+                           <h2 class="text-2xl font-bold">Banana</h2>
+                           <p>Professional employees are there for you to pick the most  amazing and fresh fruits.</p>
+                           <div class="rating ">
+                               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                           </div>
+                                   <div class="flex justify-center gap-4 mt-4 ">
+                                       <!-- if there is a button in form, it will close the modal -->
+                                       <button class="border-2 border-orange-500 rounded-lg text-orange-600 p-3">Close</button>
+                                       <div>
+                                           <button class="text-white border-none rounded-xl p-3  bg-[#F85559]">Buy Now</button></div>
+                                   </div>
+                               </form>
+                           </dialog>
                     </div>
                 </div>
             </div>
@@ -277,10 +373,10 @@
                         <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
                         <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece
                             of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-                        <div class="grid gap-10  gri-col md:grid-cols-2 lg:grid-cols-4">
+                        <div class="grid gap-10   gri-col md:grid-cols-2 lg:grid-cols-4">
                             <div class="mx-auto">
                                 <img src="images/member1.png" alt="">
-                                <h3>Awlad Hossain</h3>
+                                <h3 class="mt-5">Awlad Hossain</h3>
                                 <p>Fruits Expert</p>
                                 <div class=" mx-auto">
                                     <i class="fa-brands rounded text-white-900 fa-facebook"></i>
@@ -290,7 +386,7 @@
                             </div>
                             <div class="mx-auto">
                                 <img src="images/member2.png" alt="">
-                                <h3>Awlad Hossain</h3>
+                                <h3 class="mt-5">Safia Chowdhury</h3>
                                 <p>Fruits Expert</p>
                                 <div class="">
                                     <i class="fa-brands rounded text-white-900 fa-facebook"></i>
@@ -300,7 +396,7 @@
                             </div>
                             <div class="mx-auto">
                                 <img src="images/member3.png" alt="">
-                                <h3>Awlad Hossain</h3>
+                                <h3 class="mt-5">Rokib Hossain</h3>
                                 <p>Fruits Expert</p>
                                 <div class="">
                                     <i class="fa-brands rounded text-white-900 fa-facebook"></i>
@@ -310,7 +406,7 @@
                             </div>
                             <div class="mx-auto">
                                 <img src="images/member4.png" alt="">
-                                <h3>Awlad Hossain</h3>
+                                <h3 class="mt-5">Chaity</h3>
                                 <p>Fruits Expert</p>
                                 <div class="">
                                     <i class="fa-brands rounded text-white-900 fa-facebook"></i>
@@ -338,32 +434,41 @@
 
                 <div class="grid  grid-rows-1 lg:grid-rows-3 flex-1 gap-7">
                     <!-- card 1 -->
-                    <div class="flex">
+                    <div class="flex gap-5">
                         <div>
-                            <img class="bg-gray-400 w-20 rounded-full  mt-5" src="./images/group 1.png" alt="">
+                            <img class="bg-gray-400 w-20 rounded-full   mt-5" src="./images/group 1.png" alt="">
                         </div>
                         <div>
-                            <h2 class="text-3xl underline">Dedicated Team</h2>
+                            <h2 class="text-3xl ">Dedicated Team</h2>
+                            <div class="w-[100px] border border-black h-[1px]  mt-2 mb-2 bg-[#121212CC] ">
+                                <hr>
+                            </div>
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                     <!-- card 2 -->
-                    <div class="flex ">
+                    <div class="flex gap-5">
                         <div>
                             <img class="bg-gray-400 w-20 rounded-full  mt-5" src="./images/love 1.png" alt="">
                         </div>
                         <div>
-                            <h2 class="text-3xl underline">Fresh is Best</h2>
+                            <h2 class="text-3xl ">Fresh is Best</h2>
+                            <div class="w-[100px] border border-black h-[1px]  mt-2 mb-2 bg-[#121212CC] ">
+                                <hr>
+                            </div>
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                     <!-- card 3 -->
-                    <div class="flex">
+                    <div class="flex gap-5">
                         <div>
                             <img class="bg-gray-400 w-20 rounded-full  mt-5" src="./images/gift-box 1.png" alt="">
                         </div>
                         <div>
-                            <h2 class="text-3xl underline">Gift Certificates</h2>
+                            <h2 class="text-3xl ">Gift Certificates</h2>
+                            <div class="w-[100px] border border-black h-[1px]  mt-2 mb-2 bg-[#121212CC] ">
+                                <hr>
+                            </div>
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
@@ -376,35 +481,52 @@
                 </div>
 
 
-                <div class="grid grid-rows-1 lg:grid-rows-3 flex-1 ga-7">
+                <div class="grid text-right  grid-rows-1 lg:grid-rows-3 flex-1 ga-7">
                     <!-- card 1 -->
-                    <div class="flex">
+                    <div class="flex justify-end gap-5">
+                        
+                        <div>
+                            <h2 class="text-3xl ">Integrated Supplier</h2>
+                            <div class="flex justify-end">
+                                <div class="w-[100px] border border-black h-[1px]  mt-2 mb-2 bg-[#121212CC] ">
+                                    <hr>
+                                </div>
+                            </div>
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
                         <div>
                             <img class="bg-gray-400 w-20 rounded-full  mt-5" src="./images/fruit 1.png" alt="">
                         </div>
-                        <div>
-                            <h2 class="text-3xl underline">Integrated Supplier</h2>
-                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                        </div>
                     </div>
                     <!-- card 2 -->
-                    <div class="flex">
+                    <div class="flex gap-5">                        
+                        <div>
+                            <h2 class="text-3xl ">Sustainable Practice</h2>
+                            <div class="flex justify-end">
+                                <div class="w-[100px] border border-black h-[1px]  mt-2 mb-2 bg-[#121212CC] ">
+                                    <hr>
+                                </div>
+                            </div>
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
                         <div>
                             <img class="bg-gray-400 w-20 rounded-full  mt-5" src="./images/ice-cream 1.png" alt="">
                         </div>
-                        <div>
-                            <h2 class="text-3xl underline">Sustainable Practice</h2>
-                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
-                        </div>
                     </div>
                     <!-- card 3 -->
-                    <div class="flex">
+                    <div class="flex gap-5">
+                        
                         <div>
-                            <img class="bg-gray-300 w-20 rounded-full  mt-5" src="./images/like 1.png " alt="">
+                            <h2 class="text-3xl ">The Benefits Only</h2>
+                            <div class="flex justify-end">
+                                <div class="w-[100px] border border-black h-[1px]  mt-2 mb-2 bg-[#121212CC] ">
+                                    <hr>
+                                </div>
+                            </div>
+                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                         <div>
-                            <h2 class="text-3xl underline">The Benefits Only</h2>
-                            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <img class="bg-gray-300 w-20 rounded-full  mt-5" src="./images/like 1.png " alt="">
                         </div>
                     </div>
 
